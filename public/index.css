@@ -1,0 +1,107 @@
+#page {
+  width: 100%;
+}
+ul {
+  background: black;
+  width: 100%;
+}
+ul li {
+  display: inline-block;
+}
+.sectionheader {
+  font-size: 1.7em;
+}
+a {
+  color: #fff;
+}
+
+.copy span {
+  text-align: right;
+}
+
+.sectionheader ~ * {
+  width: 50%;
+}
+
+.text {
+  float: right;
+  width: 30%;
+  margin: 0 15% 0 0;
+}
+
+.navigationlist {
+  text-align: center;
+}
+.li {
+  margin: 1em;
+  padding: 10px;
+}
+.li:hover {
+  color: blue;
+  font-weight: bold;
+}
+
+div > #image {
+  margin: 0 0 0 calc(50% - 200px);
+}
+
+h1.h1 {
+  text-align: center;
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navigationlist {
+    width: 100%;
+  }
+  a {
+    font-size: 1.8rem;
+  }
+  h1.h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .text {
+    font-size: 1.5rem;
+  }
+  #bottomalign {
+    font-size: 1.2rem;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  a {
+    font-size: 1.8rem;
+  }
+  #image {
+    max-width: 100%;
+    height: auto;
+  }
+  h1.h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .text {
+    font-size: 1.8rem;
+    width: 80%;
+  }
+  .sectionheader ~ img {
+    width: 100%;
+  }
+  #bottomalign {
+    font-size: 1.2rem;
+  }
+}

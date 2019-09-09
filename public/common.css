@@ -1,0 +1,25 @@
+html,
+body {
+  font-size: 16px;
+  background: cyan;
+  width: 100%;
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+}
+
+footer {
+  /* background: rgba(255, 255, 255, 0.8); */
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 100vw;
+  display: block;
+  color: #fff;
+  text-align: center;
+}
